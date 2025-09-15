@@ -18,19 +18,6 @@ class Grades:
         self.project = project
         self.final = final
         
-    def set_all(self, quiz_1=None, quiz_2=None, midterm=None, project=None, final=None):
-        """
-        Sets the grades all at once. 
-        When calling this function, the caller can specify
-        the parameters to be set like so:
-        Grades().set_all(midterm=None, project=None)
-        """
-        self.quiz_1 = quiz_1
-        self.quiz_2 = quiz_2
-        self.midterm = midterm
-        self.project = project
-        self.final = final
-
     @classmethod
     def from_json_quizzes(cls, filepath):
         """
